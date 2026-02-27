@@ -1,0 +1,12 @@
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\bin\Debug\net8.0\Core.deps.json
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\bin\Debug\net8.0\Core.dll
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\bin\Debug\net8.0\Core.pdb
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.sourcelink.json
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.dll
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\refint\Core.dll
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\Core.pdb
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Core\obj\Debug\net8.0\ref\Core.dll

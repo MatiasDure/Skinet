@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj": {}
+  },
+  "projects": {
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.121/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
