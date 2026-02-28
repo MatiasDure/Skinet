@@ -3,6 +3,7 @@ using Core.Entities;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
@@ -42,6 +43,34 @@ namespace API.Controllers
             await context.SaveChangesAsync();
 
             return product;
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<Product>> UpdateProduct(int id, Product updatedProduct)
+        {
+            var product = await context.Products.FindAsync(id);
+
+            if(product == null) return NotFound();
+
+            product.Update(updatedProduct);
+
+            await context.SaveChangesAsync();
+
+            return product;
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> DeleteProduct(int id)
+        {
+            var product = await context.Products.FindAsync(id);
+
+            if(product != null)
+            {
+                context.Products.Remove(product);
+                await context.SaveChangesAsync();
+            }
+            
+            return NoContent();
         }
     }
 }
