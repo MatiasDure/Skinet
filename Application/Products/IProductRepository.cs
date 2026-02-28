@@ -4,7 +4,7 @@ namespace Application.Products
 {
     public interface IProductRepository
     {
-        public Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type);
+        public Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string? sort);
         public Task<Product?> GetProductByIdAsync(int id);
         public void AddProduct(Product product);
         public void DeleteProduct(Product product);

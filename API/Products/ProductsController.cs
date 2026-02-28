@@ -24,9 +24,12 @@ namespace API.Products
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductDto>>> GetProducts([FromQuery] string? brand, [FromQuery] string? type)
+        public async Task<ActionResult<IReadOnlyList<ProductDto>>> GetProducts(
+            [FromQuery] string? brand, 
+            [FromQuery] string? type,
+            [FromQuery] string? sort)
         {
-            var products = await _mediator.Send(new ListProductsQuery(brand, type));
+            var products = await _mediator.Send(new ListProductsQuery(brand, type, sort));
             return Ok(products);
         }
 
