@@ -42,7 +42,7 @@ namespace API.Products
         public async Task<ActionResult<ProductDto>> CreateProduct(CreateProductCommand command)
         {
             var product = await _mediator.Send(command);
-            return Created($"api/products/{product.Id}", product);
+            return CreatedAtAction($"GetProduct", new { id = product.Id}, product);
         }
 
         [HttpPut("{id:int}")]
