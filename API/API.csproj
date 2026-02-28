@@ -16,4 +16,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.24" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Products\Requests\" />
+  </ItemGroup>
+
 </Project>

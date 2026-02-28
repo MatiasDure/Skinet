@@ -14,3 +14,5 @@ D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Infrastru
 D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Infrastructure\bin\Debug\net8.0\Application.dll
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Infrastructure\bin\Debug\net8.0\Application.pdb
