@@ -3,7 +3,9 @@ using Application.Products;
 using Application.Products.Commands.CreateProduct;
 using Application.Products.Commands.DeleteProduct;
 using Application.Products.Commands.UpdateProduct;
+using Application.Products.Queries.GetBrands;
 using Application.Products.Queries.GetProduct;
+using Application.Products.Queries.GetTypes;
 using Application.Products.Queries.ListProducts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Products
 {
     [ApiController]
-    [Route("api/products")]
+    [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -69,6 +71,20 @@ namespace API.Products
         {
             await _mediator.Send(new DeleteProductCommand(id));
             return NoContent();
+        }
+
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<string>>> GetBrands()
+        {
+            var brands = await _mediator.Send(new GetBrandsQuery());
+            return Ok(brands);
+        }
+
+        [HttpGet("types")]
+        public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
+        {
+            var types = await _mediator.Send(new GetTypesQuery()); 
+            return Ok(types);
         }
     }
 }
