@@ -1,0 +1,12 @@
+using Core.Products.Entities;
+
+namespace Core.Products.Interfaces;
+
+public interface IProductRepository
+{
+    public Task<IReadOnlyList<Product>> GetProductsAsync();
+    public Task<Product?> GetProductByIdAsync(int id);
+    public void AddProduct(Product product);
+    public void DeleteProduct(Product product); 
+    public Task<bool> SaveChangesAsync();
+}

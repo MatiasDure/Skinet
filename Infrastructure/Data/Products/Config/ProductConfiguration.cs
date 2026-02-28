@@ -1,5 +1,6 @@
 using System;
 using Core.Entities;
+using Core.Products.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

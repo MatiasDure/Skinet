@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using Core.Entities;
+using Core.Products.Entities;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
