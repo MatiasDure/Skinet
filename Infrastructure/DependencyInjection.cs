@@ -1,6 +1,7 @@
 using Application.Products;
 using Infrastructure.Data;
 using Infrastructure.Data.Products;
+using Infrastructure.Data.Seed;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +18,7 @@ namespace Infrastructure
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<DatabaseSeeder>();
 
             return services;
         }
