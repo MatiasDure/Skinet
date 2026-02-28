@@ -1,6 +1,7 @@
 using System;
+using System.Threading.Tasks;
+using Application.Products;
 using Core.Products.Entities;
-using Core.Products.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data.Products;

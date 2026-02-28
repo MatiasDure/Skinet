@@ -14,15 +14,23 @@ namespace Core.Products.Entities
         public required string Brand { get; set; }
         public int QuantityInStock { get; set; }
 
-        public void Update(Product updatedProduct)
+        public void Update(
+            string name,
+            string description,
+            decimal price,
+            string pictureUrl,
+            string type,
+            string brand,
+            int quantityInStock
+        )
         {
-            Name = updatedProduct.Name;
-            Description = updatedProduct.Description;
-            Price = updatedProduct.Price;
-            PictureUrl = updatedProduct.PictureUrl;
-            Type = updatedProduct.Type;
-            Brand = updatedProduct.Brand;
-            QuantityInStock = updatedProduct.QuantityInStock;
+            Name = name;
+            Description = description;
+            Price = price;
+            PictureUrl = pictureUrl;
+            Type = type;
+            Brand = brand;
+            QuantityInStock = quantityInStock;
         }
     }
 }
