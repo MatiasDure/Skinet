@@ -1,5 +1,4 @@
 using System;
-using System.Data;
 using Core.Entities;
 
 namespace Core.Products.Entities
@@ -10,8 +9,8 @@ namespace Core.Products.Entities
         public required string Description { get; set; }
         public decimal Price { get; set; }
         public required string PictureUrl { get; set; }
-        public required string Type { get; set; }
-        public required string Brand { get; set; }
+        public required string Type { get; set; } // This should ideally be its own Entity
+        public required string Brand { get; set; } // This should ideally be its own Entity
         public int QuantityInStock { get; set; }
 
         public void Update(
