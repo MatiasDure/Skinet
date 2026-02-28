@@ -12,16 +12,20 @@ public class ProductRepository : IProductRepository
 
     public ProductRepository(StoreContext context)
     {
-        this._context = context;
+        _context = context;
     }
 
     public void AddProduct(Product product) => _context.Products.Add(product);
 
     public void DeleteProduct(Product product) => _context.Products.Remove(product);
 
+    public async Task<IReadOnlyList<string>> GetBrandsAsync() => await _context.Products.Select(p => p.Brand).Distinct().ToListAsync();
+
     public async Task<Product?> GetProductByIdAsync(int id) => await _context.Products.FindAsync(id);
 
     public async Task<IReadOnlyList<Product>> GetProductsAsync() => await _context.Products.ToListAsync();
+
+    public async Task<IReadOnlyList<string>> GetTypesAsync() => await _context.Products.Select(p => p.Type).Distinct().ToListAsync();
 
     public async Task<bool> SaveChangesAsync() => await _context.SaveChangesAsync() > 0;
 }
