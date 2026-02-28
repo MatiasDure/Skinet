@@ -14,7 +14,7 @@ public class ListProductsHandler : IRequestHandler<ListProductsQuery, IReadOnlyL
 
     public async Task<IReadOnlyList<ProductDto>> Handle(ListProductsQuery request, CancellationToken cancellationToken)
     {
-        var products = await _productsRepo.GetProductsAsync();
+        var products = await _productsRepo.GetProductsAsync(request.Brand, request.Type);
         return products
             .Select(p => new ProductDto(p))
             .ToList();

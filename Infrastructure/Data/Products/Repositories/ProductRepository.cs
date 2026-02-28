@@ -23,7 +23,17 @@ public class ProductRepository : IProductRepository
 
     public async Task<Product?> GetProductByIdAsync(int id) => await _context.Products.FindAsync(id);
 
-    public async Task<IReadOnlyList<Product>> GetProductsAsync() => await _context.Products.ToListAsync();
+    public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type)
+    {
+        var query = _context.Products.AsQueryable();
+
+        if(!string.IsNullOrEmpty(brand))
+            query = query.Where(p => p.Brand == brand);
+        if(!string.IsNullOrEmpty(type))
+            query = query.Where(p => p.Type == type);
+
+        return await query.ToListAsync();
+    } 
 
     public async Task<IReadOnlyList<string>> GetTypesAsync() => await _context.Products.Select(p => p.Type).Distinct().ToListAsync();
 
