@@ -1,9 +1,7 @@
 using System.Runtime.CompilerServices;
 using Core.Entities;
 using Infrastructure.Data;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
@@ -64,11 +62,10 @@ namespace API.Controllers
         {
             var product = await context.Products.FindAsync(id);
 
-            if(product != null)
-            {
-                context.Products.Remove(product);
-                await context.SaveChangesAsync();
-            }
+            if(product == null) return NotFound();
+            
+            context.Products.Remove(product);
+            await context.SaveChangesAsync();
             
             return NoContent();
         }
