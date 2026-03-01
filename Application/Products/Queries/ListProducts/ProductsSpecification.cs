@@ -12,11 +12,17 @@ public class ProductsSpecification : BaseSpecification<Product>
             (specParams.Brands.Count == 0 || specParams.Brands.Contains(p.Brand)) && 
             (specParams.Types.Count == 0 || specParams.Types.Contains(p.Type));
 
-        if (specParams.Sort == "priceAsc")
-            OrderBy = p => p.Price;
-        else if (specParams.Sort == "priceDesc")
-            OrderByDescending = p => p.Price;
-        else 
-            OrderBy = p => p.Name;
+        switch(specParams.Sort)
+        {
+            case "priceAsc":
+                OrderBy = p => p.Price;
+                break;
+            case "priceDesc":
+                OrderByDescending = p => p.Price;    
+                break;
+            default:
+                OrderBy = p => p.Name;
+                break;
+        }
     }
 }
