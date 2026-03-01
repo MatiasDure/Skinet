@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Qa0viezKLK0Yu+n70B6D5MQvrgPBphUHnCUMTTwQ6zPV0uppGdL5UlTAbXVkhrFkWxDS4kU4ocenMoRsT0p5A==",
+  "dgSpecHash": "/Y4mpAsbGvmw6KXJw2BTTuS3BCzE/j5ifz2H6xSEXTM0PM7zmod5m1zxxeXY+4Lo7c/h9Gfn/mZ+fD3Ej/PVmg==",
   "success": true,
-  "projectFilePath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
+  "projectFilePath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matid\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\matid\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,3 +1,4 @@
+using API.Products.Mappers;
 using API.Products.Requests;
 using Application.Products;
 using Application.Products.Commands.CreateProduct;
@@ -25,9 +26,9 @@ namespace API.Products
 
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<ProductDto>>> GetProducts(
-            [FromQuery] ProductSpecParams filter)
+            [FromQuery] ProductParamsRequest param)
         {
-            var products = await _mediator.Send(new ListProductsQuery(filter));
+            var products = await _mediator.Send(new ListProductsQuery(ProductSpecParamsMapper.ToParams(param)));
             return Ok(products);
         }
 

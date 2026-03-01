@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Products\Requests\" />
+    <Folder Include="Products\Mappers\" />
   </ItemGroup>
 
 </Project>
