@@ -1,7 +1,5 @@
+using System.ComponentModel;
+
 namespace Application.Products.Queries.ListProducts;
 
-public record ProductSpecParams(
-    string? Brand,
-    string? Type,
-    string? Sort
-);
+public record ProductSpecParams(List<string> Brands, List<string> Types, string? Sort);

@@ -6,15 +6,17 @@ namespace Application.Products.Queries.ListProducts;
 
 public class ProductsSpecification : BaseSpecification<Product>
 {
-    public ProductsSpecification(ProductSpecParams filter)
+    public ProductsSpecification(ProductSpecParams specParams)
     {
         Criteria = p => 
-            (string.IsNullOrEmpty(filter.Brand) || p.Brand == filter.Brand) && 
-            (string.IsNullOrEmpty(filter.Type) || p.Type == filter.Type);
+            (specParams.Brands.Count == 0 || specParams.Brands.Contains(p.Brand)) && 
+            (specParams.Types.Count == 0 || specParams.Types.Contains(p.Type));
 
-        if (filter.Sort == "priceAsc")
+        if (specParams.Sort == "priceAsc")
             OrderBy = p => p.Price;
-        else if (filter.Sort == "priceDesc")
+        else if (specParams.Sort == "priceDesc")
             OrderByDescending = p => p.Price;
+        else 
+            OrderBy = p => p.Name;
     }
 }

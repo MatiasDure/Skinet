@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A5n6Pt+IbO01GLxcJYvmfp6L/uxwQy2PImpFRe3igfr2E1JY1Atqs2bLDsqMOF25W/NnVkuMMuHL0oUBS9cU3g==",
+  "dgSpecHash": "Hd1M04UHz6npRMa335lya9jHY+5STMYoqXr+XYiFTOlL6cA5egpCYhiVu7kHXtc91RaXtzGHGh6UoQ5tMRlo4A==",
   "success": true,
-  "projectFilePath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj",
+  "projectFilePath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matid\\.nuget\\packages\\mediatr\\14.0.0\\mediatr.14.0.0.nupkg.sha512",
     "C:\\Users\\matid\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
