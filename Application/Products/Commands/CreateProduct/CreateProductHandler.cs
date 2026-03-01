@@ -6,9 +6,9 @@ namespace Application.Products.Commands.CreateProduct;
 
 public class CreateProductHandler : IRequestHandler<CreateProductCommand, ProductDto>
 {
-    private readonly IProductRepository _productsRepo;
+    private readonly IRepository<Product> _productsRepo;
 
-    public CreateProductHandler(IProductRepository productsRepo)
+    public CreateProductHandler(IRepository<Product> productsRepo)
     {
         _productsRepo = productsRepo;
     }
@@ -26,7 +26,7 @@ public class CreateProductHandler : IRequestHandler<CreateProductCommand, Produc
             QuantityInStock = request.QuantityInStock
         };
         
-        _productsRepo.AddProduct(productCreated);
+        _productsRepo.AddEntity(productCreated);
         await _productsRepo.SaveChangesAsync();
 
         return new ProductDto(productCreated);

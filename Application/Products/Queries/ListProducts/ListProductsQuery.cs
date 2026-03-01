@@ -2,8 +2,4 @@ using MediatR;
 
 namespace Application.Products.Queries.ListProducts;
 
-public record ListProductsQuery(
-    string? Brand,
-    string? Type,
-    string? Sort
-) : IRequest<IReadOnlyList<ProductDto>>;
+public record ListProductsQuery(ProductSpecParams Filter) : IRequest<IReadOnlyList<ProductDto>>;

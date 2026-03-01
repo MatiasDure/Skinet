@@ -1,25 +1,26 @@
 using System;
 using System.Runtime.CompilerServices;
+using Core.Products.Entities;
 using MediatR;
 
 namespace Application.Products.Commands.DeleteProduct;
 
 public class DeleteProductHandler : IRequestHandler<DeleteProductCommand>
 {
-    private readonly IProductRepository _productsRepo;
+    private readonly IRepository<Product> _productsRepo;
 
-    public DeleteProductHandler(IProductRepository productsRepo)
+    public DeleteProductHandler(IRepository<Product> productsRepo)
     {
         _productsRepo = productsRepo;
     }
 
     public async Task Handle(DeleteProductCommand request, CancellationToken cancellationToken)
     {
-        var product = await _productsRepo.GetProductByIdAsync(request.Id);
+        var product = await _productsRepo.GetEntityByIdAsync(request.Id);
 
         if(product == null) return;
 
-        _productsRepo.DeleteProduct(product);
+        _productsRepo.DeleteEntity(product);
         await _productsRepo.SaveChangesAsync();
 
         return;
