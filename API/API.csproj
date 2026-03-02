@@ -12,12 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
     <PackageReference Include="MediatR" Version="14.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.24" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Products\Mappers\" />
+    <Folder Include="Products\Requests\Create\" />
   </ItemGroup>
 
 </Project>

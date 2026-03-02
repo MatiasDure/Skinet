@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5Qa0viezKLK0Yu+n70B6D5MQvrgPBphUHnCUMTTwQ6zPV0uppGdL5UlTAbXVkhrFkWxDS4kU4ocenMoRsT0p5A==",
+  "dgSpecHash": "BPxDMAnFIGv/b8ZxezIL/9KXyOAPvgbuUvlXO8dOaMD3fz7dyg7kjYIemhAl6wMvBh10Hd9gOLuXLX0GOsX6kg==",
   "success": true,
   "projectFilePath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matid\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\matid\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\matid\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\matid\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\matid\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\matid\\.nuget\\packages\\mediatr\\14.0.0\\mediatr.14.0.0.nupkg.sha512",
     "C:\\Users\\matid\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

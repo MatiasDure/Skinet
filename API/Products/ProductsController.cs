@@ -1,5 +1,6 @@
 using API.Products.Mappers;
 using API.Products.Requests;
+using API.Products.Requests.Create;
 using Application.Products;
 using Application.Products.Commands.CreateProduct;
 using Application.Products.Commands.DeleteProduct;
@@ -8,6 +9,7 @@ using Application.Products.Queries.GetBrands;
 using Application.Products.Queries.GetProduct;
 using Application.Products.Queries.GetTypes;
 using Application.Products.Queries.ListProducts;
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -43,9 +45,35 @@ namespace API.Products
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProductDto>> CreateProduct(CreateProductCommand command)
+        public async Task<ActionResult<ProductDto>> CreateProduct(
+            CreateProductRequest request,
+            IValidator<CreateProductRequest> validator
+        )
         {
-            var product = await _mediator.Send(command);
+            var validationResult = await validator.ValidateAsync(request); 
+            if (!validationResult.IsValid)
+            {
+                // TODO: Find a better cleaner approach for this and remove this from the controller
+                var problemDetails = new HttpValidationProblemDetails(validationResult.ToDictionary())
+                {
+                    Status = StatusCodes.Status400BadRequest,
+                    Title = "Validation failed",
+                    Detail = "One or more validation errors occured.",
+                    Instance = "/api/products"
+                };
+
+                return new ObjectResult(problemDetails) { StatusCode = StatusCodes.Status400BadRequest };
+            }
+            
+            var product = await _mediator.Send(new CreateProductCommand(
+                request.Name, 
+                request.Description, 
+                request.Price, 
+                request.PictureUrl, 
+                request.Type, 
+                request.Brand, 
+                request.QuantityInStock
+            ));
             return CreatedAtAction($"GetProduct", new { id = product.Id}, product);
         }
 

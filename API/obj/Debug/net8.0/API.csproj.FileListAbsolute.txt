@@ -146,3 +146,5 @@ D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\API\bin\D
 D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\API\bin\Debug\net8.0\Application.dll
 D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\API\bin\Debug\net8.0\Application.pdb
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\API\bin\Debug\net8.0\FluentValidation.dll
+D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
