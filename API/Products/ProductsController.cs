@@ -34,6 +34,12 @@ namespace API.Products
             return Ok(products);
         }
 
+        [HttpGet("internal-error")]
+        public IActionResult GetInternalError()
+        {
+            throw new Exception("This is a test exception");
+        }
+
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ProductDto>> GetProduct(int id)
         {

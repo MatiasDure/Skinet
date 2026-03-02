@@ -1,3 +1,4 @@
+using API.Middleware;
 using API.Products.Requests.Create;
 using Application;
 using FluentValidation;
@@ -15,6 +16,7 @@ builder.Services.AddValidatorsFromAssemblyContaining<CreateProductRequestValidat
 var app = builder.Build();
 
 // configure the HTTP request pipeline
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.MapControllers();
 
 if(app.Environment.IsDevelopment())
