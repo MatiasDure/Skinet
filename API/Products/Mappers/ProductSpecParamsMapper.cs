@@ -31,8 +31,9 @@ public static class ProductSpecParamsMapper
         return new ProductSpecParams(
             brands, 
             types, 
-            request.Sort, 
-            request.Page, 
+            request.Sort,
+            request.Search?.ToLower(),
+            page, 
             limit
         );
     }

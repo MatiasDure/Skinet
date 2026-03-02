@@ -6,6 +6,7 @@ public record ProductSpecParams(
     List<string> Brands, 
     List<string> Types, 
     string? Sort,
+    string? Search,
     int Page,
     int Limit 
 );

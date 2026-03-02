@@ -9,6 +9,7 @@ public class ProductsSpecification : BaseSpecification<Product>
     public ProductsSpecification(ProductSpecParams specParams)
     {
         Criteria = p => 
+            (string.IsNullOrEmpty(specParams.Search) || p.Name.ToLower().Contains(specParams.Search)) &&
             (specParams.Brands.Count == 0 || specParams.Brands.Contains(p.Brand)) && 
             (specParams.Types.Count == 0 || specParams.Types.Contains(p.Type));
 
