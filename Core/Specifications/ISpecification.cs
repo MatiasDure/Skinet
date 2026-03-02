@@ -12,4 +12,5 @@ public interface ISpecification<T> where T : BaseEntity
     public int Take { get; }
     public int Skip { get; }
     public bool IsPaginationEnabled { get; }
+    public IQueryable<T> ApplyCriteria(IQueryable<T> query);
 }

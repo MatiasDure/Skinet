@@ -15,8 +15,10 @@ public class ListProductsHandler : IRequestHandler<ListProductsQuery, Pagination
 
     public async Task<PaginationDto<ProductDto>> Handle(ListProductsQuery request, CancellationToken cancellationToken)
     {
-        var products = await _productsRepo.GetListWithSpecAsync(new ProductsSpecification(request.SpecParams));
-        var count = await _productsRepo.CountAsync(new ProductForCountSpecification(request.SpecParams));
+        var specification = new ProductsSpecification(request.SpecParams);
+        
+        var products = await _productsRepo.GetListWithSpecAsync(specification);
+        var count = await _productsRepo.CountAsync(specification);
 
         return new PaginationDto<ProductDto> (
             request.SpecParams.Page,

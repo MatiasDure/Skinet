@@ -18,6 +18,14 @@ public abstract class BaseSpecification<T> : ISpecification<T> where T : BaseEnt
 
     public bool IsPaginationEnabled { get; private set; }
 
+    public IQueryable<T> ApplyCriteria(IQueryable<T> query)
+    {
+        if(Criteria == null) return query;
+
+        query = query.Where(Criteria);
+        return query;
+    }
+
     protected void ApplyPagination(int skip, int take)
     {
         Skip = skip;

@@ -19,7 +19,7 @@ public class Repository<T>: IRepository<T> where T: BaseEntity
 
     public void AddEntity(T entity) => _context.Set<T>().Add(entity);
 
-    public async Task<int> CountAsync(ISpecification<T> specification) => await SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), specification).CountAsync();
+    public async Task<int> CountAsync(ISpecification<T> specification) => await specification.ApplyCriteria(_context.Set<T>().AsQueryable()).CountAsync();
 
     public void DeleteEntity(T entity) => _context.Set<T>().Remove(entity);
 
