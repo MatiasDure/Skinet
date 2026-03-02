@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj": {}
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj": {}
   },
   "projects": {
-    "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj": {
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\API.csproj",
         "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-        "outputPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\obj\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj": {
-                "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj"
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj"
               },
-              "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj"
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj": {
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-        "outputPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\obj\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
-                "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj"
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj"
               }
             }
           }
@@ -140,14 +140,14 @@
         }
       }
     },
-    "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-        "outputPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\obj\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -193,14 +193,14 @@
         }
       }
     },
-    "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-        "outputPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\obj\\",
+        "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -215,11 +215,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj": {
-                "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj"
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Application\\Application.csproj"
               },
-              "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
-                "projectPath": "d:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj"
+              "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj": {
+                "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj"
               }
             }
           }

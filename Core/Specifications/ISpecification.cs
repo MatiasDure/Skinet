@@ -6,8 +6,10 @@ namespace Core.Specifications;
 
 public interface ISpecification<T> where T : BaseEntity
 {
-    Expression<Func<T, bool>>? Criteria { get; }
-    Expression<Func<T, object>>? OrderBy { get; }
-    Expression<Func<T, object>>? OrderByDescending { get; }
-
+    public Expression<Func<T, bool>>? Criteria { get; }
+    public Expression<Func<T, object>>? OrderBy { get; }
+    public Expression<Func<T, object>>? OrderByDescending { get; }
+    public int Take { get; }
+    public int Skip { get; }
+    public bool IsPaginationEnabled { get; }
 }

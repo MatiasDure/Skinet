@@ -11,4 +11,17 @@ public abstract class BaseSpecification<T> : ISpecification<T> where T : BaseEnt
     public Expression<Func<T, object>>? OrderBy { get; protected set; }
 
     public Expression<Func<T, object>>? OrderByDescending { get; protected set; }
+
+    public int Take { get; private set; }
+
+    public int Skip { get; private set; }
+
+    public bool IsPaginationEnabled { get; private set; }
+
+    protected void ApplyPagination(int skip, int take)
+    {
+        Skip = skip;
+        Take = take;
+        IsPaginationEnabled = true;
+    }
 }

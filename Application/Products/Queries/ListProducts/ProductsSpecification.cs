@@ -24,5 +24,8 @@ public class ProductsSpecification : BaseSpecification<Product>
                 OrderBy = p => p.Name;
                 break;
         }
+
+        // if page size = 10 and page index = 3, we skip the first 20 items (10 * (3 - 1) = 20) and get the next 10 items (20-29)
+        ApplyPagination(specParams.Limit * (specParams.Page - 1), specParams.Limit);
     }
 }
