@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Backend\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\Core.csproj",
+      "projectPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Backend\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-      "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Core\\obj\\",
+      "outputPath": "D:\\Mula\\Documents\\Matias\\study\\WebDevelopment\\ecommerce-dotnet-angular\\Backend\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config"

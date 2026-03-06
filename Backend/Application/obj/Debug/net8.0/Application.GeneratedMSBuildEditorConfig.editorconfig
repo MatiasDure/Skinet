@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Application
-build_property.ProjectDir = D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Application\
+build_property.ProjectDir = D:\Mula\Documents\Matias\study\WebDevelopment\ecommerce-dotnet-angular\Backend\Application\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
