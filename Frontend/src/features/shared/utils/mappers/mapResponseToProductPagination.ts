@@ -7,6 +7,6 @@ export function mapResponseToProductPagination(json: any) : Pagination<Product> 
         Page: json.page,
         Limit: json.limit,
         Count: json.count,
-        Items: json.items.map((it: any) => mapResponseToProduct(it))
+        Data: json.data.map((it: any) => mapResponseToProduct(it))
     }
 }
