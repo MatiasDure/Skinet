@@ -1,7 +1,9 @@
 using API.Extensions;
 using API.Middleware;
 using API.Products.Requests.Create;
+using API.Urls;
 using Application;
+using Application.Urls;
 using FluentValidation;
 using Infrastructure;
 using Infrastructure.Data.Seed;
@@ -16,6 +18,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateProductRequestValidator>();
 builder.Services.AddLocalImageStorage(Path.Combine(Directory.GetParent(builder.Environment.ContentRootPath)!.FullName, "Storage", "Images", "Products"), "/images/products");
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IUrlBuilder, UrlBuilder>();
 
 var app = builder.Build();
 

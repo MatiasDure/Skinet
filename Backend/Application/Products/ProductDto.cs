@@ -11,17 +11,5 @@ public record ProductDto(
     string Type,
     string Brand,
     int QuantityInStock
-)
-{
-    public ProductDto(Product product) : this(
-        Id: product.Id,
-        Name: product.Name,
-        Description: product.Description,
-        Price: product.Price,
-        PictureUrl: product.PictureUrl,
-        Type: product.Type,
-        Brand: product.Brand,
-        QuantityInStock: product.QuantityInStock
-    ) {}
-};
+);
 

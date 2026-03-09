@@ -12,6 +12,7 @@
     <Folder Include="Products\Queries\GetBrands\" />
     <Folder Include="Products\Queries\GetProduct\" />
     <Folder Include="Products\Queries\GetTypes\" />
+    <Folder Include="Urls\" />
   </ItemGroup>
 
   <ItemGroup>
