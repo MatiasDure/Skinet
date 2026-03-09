@@ -1,4 +1,6 @@
 import { useBrowse } from "../hooks/useBrowse"
+import ProductCard from "./ProductCard";
+
 
 export default function Browse() {
     const {data, isLoading, error} = useBrowse();
@@ -7,8 +9,10 @@ export default function Browse() {
     if(error) return <>Error...</>
 
     return (
-        <div>
-
+        <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr", gap: ".8rem"}}>
+            {data?.Data.map(d => {
+                return <ProductCard product={d} />
+            })}
         </div>
     )
 }
