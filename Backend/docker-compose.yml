@@ -7,8 +7,9 @@ services:
     ports:
       - "1433:1433"
     volumes:
-      - sql_data:/var/opt/mssql
+      - ecommerce-dotnet-angular_sql_data:/var/opt/mssql
 
 volumes:
-  sql_data:
+  ecommerce-dotnet-angular_sql_data:
+    external: true
 
