@@ -8,6 +8,15 @@ using Infrastructure.Data.Seed;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+   options.AddPolicy("Skinet", p =>
+   {
+       p.AllowAnyHeader();
+       p.AllowAnyMethod();
+       p.AllowAnyOrigin(); // TODO: Update to specific frontned origin
+   });
+});
 builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
@@ -17,6 +26,7 @@ var app = builder.Build();
 
 // configure the HTTP request pipeline
 app.UseMiddleware<ErrorHandlingMiddleware>();
+app.UseCors("Skinet");
 app.MapControllers();
 
 if(app.Environment.IsDevelopment())
