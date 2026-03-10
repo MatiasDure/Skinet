@@ -3,7 +3,6 @@ import type { Product } from "../../shared/types/Product";
 import type { Pagination } from "../../shared/types/Pagination";
 import { mapResponseToProductPagination } from "../../shared/utils/mappers/mapResponseToProductPagination";
 import { fetchBrowseProducts } from "../api/fetchBrowseProducts";
-import { BROWSE_MOCK_API_RESPONSE } from "../utils/mocks/browse";
 
 export function useBrowse() {
     const [data, setData] = useState<Pagination<Product> | null>(null);

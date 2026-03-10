@@ -6,7 +6,7 @@ export const fetchBrowseProducts = async (signal?: AbortSignal) => {
     } else {
         const res = await fetch("https://localhost:5001/api/products", {
             method: "GET",
-            signal: signal
+            signal
         });
     
         if(!res.ok) 
