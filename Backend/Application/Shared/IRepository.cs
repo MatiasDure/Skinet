@@ -14,4 +14,5 @@ public interface IRepository<T> where T : BaseEntity
         public Task<IReadOnlyList<T>> GetListWithSpecAsync(ISpecification<T> specification);
         public IQueryable<T> Query();
         public Task<bool> SaveChangesAsync();
+        public Task<IReadOnlyList<TResult>> SelectAsync<TResult>(Func<IQueryable<T>, IQueryable<TResult>> selector);
 }

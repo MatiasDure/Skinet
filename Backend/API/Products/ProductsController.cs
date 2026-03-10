@@ -6,6 +6,7 @@ using Application.Products.Commands.CreateProduct;
 using Application.Products.Commands.DeleteProduct;
 using Application.Products.Commands.UpdateProduct;
 using Application.Products.Queries.GetBrands;
+using Application.Products.Queries.GetFilters;
 using Application.Products.Queries.GetProduct;
 using Application.Products.Queries.GetTypes;
 using Application.Products.Queries.ListProducts;
@@ -121,6 +122,13 @@ namespace API.Products
         {
             var types = await _mediator.Send(new GetTypesQuery()); 
             return Ok(types);
+        }
+
+        [HttpGet("filters")]
+        public async Task<ActionResult<IReadOnlyList<ProductFilterDto>>> GetFilters()
+        {
+            var filters = await _mediator.Send(new GetFiltersQuery());
+            return Ok(filters);
         }
     }
 }

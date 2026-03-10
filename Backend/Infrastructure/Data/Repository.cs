@@ -32,4 +32,10 @@ public class Repository<T>: IRepository<T> where T: BaseEntity
     public IQueryable<T> Query() => _context.Set<T>();
 
     public async Task<bool> SaveChangesAsync() => await _context.SaveChangesAsync() > 0;
+
+    public async Task<IReadOnlyList<TResult>> SelectAsync<TResult>(Func<IQueryable<T>, IQueryable<TResult>> selector)
+    {
+        var query = selector(_context.Set<T>());
+        return await query.ToListAsync();
+    }
 }

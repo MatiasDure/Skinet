@@ -10,6 +10,7 @@
     <Folder Include="Products\Commands\DeleteProduct\" />
     <Folder Include="Products\Commands\UpdateProduct\" />
     <Folder Include="Products\Queries\GetBrands\" />
+    <Folder Include="Products\Queries\GetFilters\" />
     <Folder Include="Products\Queries\GetProduct\" />
     <Folder Include="Products\Queries\GetTypes\" />
     <Folder Include="Urls\" />
