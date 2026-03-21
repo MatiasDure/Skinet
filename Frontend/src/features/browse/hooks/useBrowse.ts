@@ -3,7 +3,7 @@ import type { Product } from "../../shared/types/Product";
 import type { Pagination } from "../../shared/types/Pagination";
 import { mapResponseToProductPagination } from "../../shared/utils/mappers/mapResponseToProductPagination";
 import { fetchBrowseProducts } from "../api/fetchBrowseProducts";
-import { mapSelectedFilters } from "../utils/mappers/mapSelectedFilters";
+import { parseFiltersToParams } from "../utils/parse/parseFiltersToParams";
 
 export function useBrowse(filters: Record<string, string[]>) {
     const [data, setData] = useState<Pagination<Product> | null>(null);
@@ -15,7 +15,7 @@ export function useBrowse(filters: Record<string, string[]>) {
 
         const fetchProducts = async () => {
             try{
-                const json = await fetchBrowseProducts(mapSelectedFilters(filters));
+                const json = await fetchBrowseProducts(parseFiltersToParams(filters));
                 setData(mapResponseToProductPagination(json));
             } catch(ex) {
                 setError((ex as Error).message);
